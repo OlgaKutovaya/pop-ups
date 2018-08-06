@@ -1,0 +1,86 @@
+.btn-wrapper {
+    margin: 10px auto;
+    width: 50%;
+}
+
+.btn-open {
+    padding: 15px 40px;
+    margin: 15px;
+    border: none;
+    border-radius: 3px;
+    color: #f6f6f6;
+    background: #41457a;
+    box-shadow: 1px 1px 5px 0 #929292;
+}
+
+.btn-open:hover {
+    background: #2b2f51;
+    cursor: pointer;
+}
+
+/*pop-up*/
+
+.popup-wrapper {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.d-none {
+    display: none;
+}
+
+.popup-window {
+    position: relative;
+    margin: auto;
+    width: 500px;
+    border: 1px solid #292929;
+    background: #ffffff;
+}
+.popup-window p {
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    color: #2b2f51;
+}
+/* btn - close */
+
+.btn-cancel {
+    position: absolute;
+    top: 15px;
+    left: 460px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.cross-cancel::before, .cross-cancel::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 5px;
+    background: #474d87;
+    border-radius: 15px;
+}
+
+.cross-cancel::before {
+    transform: rotate(45deg);
+}
+.cross-cancel::after {
+    transform: rotate(-45deg);
+}
+
+.cross-cancel:hover::before, .cross-cancel:hover::after {
+    background: #6e76d0;
+    cursor: pointer;
+}
